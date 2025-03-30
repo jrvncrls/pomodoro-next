@@ -4,7 +4,7 @@
 :root {
   --background: #ffffff;
   --foreground: 255, 255, 255;
-  --primary-color: #4a90e2;
+  --primary-color: oklch(0.685 0.169 237.323);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,4 +21,8 @@ body {
 
 .text-primary {
   color: var(--primary-color);
+
+  &:hover {
+    color: oklch(0.5 0.134 242.749);
+  }
 }
